@@ -45,6 +45,12 @@ public class DependencyInjectionApplication {
 				(PrimaryBeanController) ctx.getBean("primaryBeanController");
 
 		System.out.println(primaryBeanController.getGreetings());
+
+		System.out.println("___________ I18nController");
+
+		I18nController i18nController = (I18nController) ctx.getBean("i18nController");
+
+		System.out.println(i18nController.sayHello());
 	}
 
 }
