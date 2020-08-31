@@ -1,6 +1,9 @@
 package com.brankosaponjic.dependencyinjection;
 
+import com.brankosaponjic.dependencyinjection.controllers.ConstructorInjectedController;
 import com.brankosaponjic.dependencyinjection.controllers.MyController;
+import com.brankosaponjic.dependencyinjection.controllers.PropertyInjectedController;
+import com.brankosaponjic.dependencyinjection.controllers.SetterInjectedController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -17,6 +20,27 @@ public class DependencyInjectionApplication {
 		String hello = myController.sayHelloToSpring();
 
 		System.out.println(hello);
+
+		System.out.println("_________ Property");
+
+		PropertyInjectedController propertyInjectedController =
+				(PropertyInjectedController)ctx.getBean("propertyInjectedController");
+
+		System.out.println(propertyInjectedController.getGreeting());
+
+		System.out.println("__________ Setter");
+
+		SetterInjectedController setterInjectedController =
+				(SetterInjectedController) ctx.getBean("setterInjectedController");
+
+		System.out.println(setterInjectedController.getGreeting());
+
+		System.out.println("__________ Constructor");
+
+		ConstructorInjectedController constructorInjectedController =
+				(ConstructorInjectedController) ctx.getBean("constructorInjectedController");
+
+		System.out.println(constructorInjectedController.getGreeting());
 	}
 
 }

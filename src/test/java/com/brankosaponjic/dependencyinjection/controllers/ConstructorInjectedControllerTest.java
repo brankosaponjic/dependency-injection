@@ -1,10 +1,8 @@
 package com.brankosaponjic.dependencyinjection.controllers;
 
-import com.brankosaponjic.dependencyinjection.services.GreetingServiceImplItalian;
+import com.brankosaponjic.dependencyinjection.services.ImplSetter;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class ConstructorInjectedControllerTest {
 
@@ -12,7 +10,7 @@ class ConstructorInjectedControllerTest {
 
     @BeforeEach
     void setUp() {
-        constructorInjectedController = new ConstructorInjectedController(new GreetingServiceImplItalian());
+        constructorInjectedController = new ConstructorInjectedController(new ImplSetter());
     }
 
     @Test
