@@ -1,9 +1,6 @@
 package com.brankosaponjic.dependencyinjection;
 
-import com.brankosaponjic.dependencyinjection.controllers.ConstructorInjectedController;
-import com.brankosaponjic.dependencyinjection.controllers.MyController;
-import com.brankosaponjic.dependencyinjection.controllers.PropertyInjectedController;
-import com.brankosaponjic.dependencyinjection.controllers.SetterInjectedController;
+import com.brankosaponjic.dependencyinjection.controllers.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -41,6 +38,13 @@ public class DependencyInjectionApplication {
 				(ConstructorInjectedController) ctx.getBean("constructorInjectedController");
 
 		System.out.println(constructorInjectedController.getGreeting());
+
+		System.out.println("___________ Primary Bean");
+
+		PrimaryBeanController primaryBeanController =
+				(PrimaryBeanController) ctx.getBean("primaryBeanController");
+
+		System.out.println(primaryBeanController.getGreetings());
 	}
 
 }
