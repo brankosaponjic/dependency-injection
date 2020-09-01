@@ -1,8 +1,10 @@
 package com.brankosaponjic.dependencyinjection.services;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
-@Service("cat")
+@Profile("cat")
+@Service("petService")
 public class CatPetBrokenServiceImpl implements PetBrokenService {
     @Override
     public String getPetType() {
