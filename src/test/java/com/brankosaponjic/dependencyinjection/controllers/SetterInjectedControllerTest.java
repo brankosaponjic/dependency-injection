@@ -1,12 +1,8 @@
 package com.brankosaponjic.dependencyinjection.controllers;
 
-import com.brankosaponjic.dependencyinjection.services.GreetingServiceImpl;
-import com.brankosaponjic.dependencyinjection.services.GreetingServiceImplSerbian;
-import com.brankosaponjic.dependencyinjection.services.GreetingServiceImplSpanish;
+import newpackage.services.GreetingServiceImplSerbian;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class SetterInjectedControllerTest {
 

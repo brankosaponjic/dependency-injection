@@ -1,4 +1,4 @@
-package com.brankosaponjic.dependencyinjection.services;
+package newpackage.services;
 
 public interface GreetingService {
 
