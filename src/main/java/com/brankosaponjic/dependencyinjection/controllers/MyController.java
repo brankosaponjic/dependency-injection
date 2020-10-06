@@ -1,8 +1,7 @@
 package com.brankosaponjic.dependencyinjection.controllers;
 
-import newpackage.services.GreetingServiceImplItalian;
+import com.brankosaponjic.dependencyinjection.services.GreetingServiceImplItalian;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Controller;
 
 @Controller

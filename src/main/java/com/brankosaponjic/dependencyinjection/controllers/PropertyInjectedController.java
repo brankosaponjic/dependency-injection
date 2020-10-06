@@ -1,6 +1,6 @@
 package com.brankosaponjic.dependencyinjection.controllers;
 
-import newpackage.services.GreetingService;
+import com.brankosaponjic.dependencyinjection.services.GreetingService;
 import org.springframework.stereotype.Controller;
 
 @Controller

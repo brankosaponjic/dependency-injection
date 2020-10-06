@@ -1,4 +1,4 @@
-package newpackage.services;
+package com.brankosaponjic.dependencyinjection.services;
 
 import org.springframework.stereotype.Service;
 

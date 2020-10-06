@@ -8,8 +8,8 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(basePackages = {"newpackage.services", "com.brankosaponjic.dependencyinjection.controllers",
-		"com.brankosaponjic.dependencyinjection.config", "com.brankosaponjic.dependencyinjection.examplebeans"})
+//@ComponentScan(basePackages = {"com.brankosaponjic.dependencyinjection.services", "com.brankosaponjic.dependencyinjection.controllers",
+//		"com.brankosaponjic.dependencyinjection.config", "com.brankosaponjic.dependencyinjection.examplebeans"})
 public class DependencyInjectionApplication {
 
 	public static void main(String[] args) {

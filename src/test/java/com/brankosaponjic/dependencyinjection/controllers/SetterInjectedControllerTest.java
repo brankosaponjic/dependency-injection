@@ -1,6 +1,6 @@
 package com.brankosaponjic.dependencyinjection.controllers;
 
-import newpackage.services.GreetingServiceImplSerbian;
+import com.brankosaponjic.dependencyinjection.services.GreetingServiceImplSerbian;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

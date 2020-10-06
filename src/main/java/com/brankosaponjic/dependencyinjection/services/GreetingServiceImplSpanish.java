@@ -1,4 +1,4 @@
-package newpackage.services;
+package com.brankosaponjic.dependencyinjection.services;
 
 public class GreetingServiceImplSpanish implements GreetingService {
     @Override
