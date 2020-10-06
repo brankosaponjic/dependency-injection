@@ -1,0 +1,34 @@
+# This is a comment in YAML (Yet Another Markup Language)
+
+name: Branko
+
+names: # Comment
+    -Branko
+    -Ivan
+    -Emir
+
+pound_sign: "#"
+
+book:
+    author: Emir Kusturica
+    publisher:  Katena Mundi
+
+# Boolean values:
+
+truth: yes
+another_truth: True
+more_true: true
+false: no # No, false, FALSE
+
+# String value:
+
+string_val: "This is a string value"
+colon_string: "my courses: one, two, three"
+include_new_lines: |
+  this is a new line
+  this is another new line
+  this is another new line
+ignore_new_lines: >
+  this is
+  just one long
+  string value
